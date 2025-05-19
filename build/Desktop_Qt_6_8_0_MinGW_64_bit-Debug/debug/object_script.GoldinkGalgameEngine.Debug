@@ -1,0 +1,11 @@
+debug/jsoncontorller.o
+debug/landingpage.o
+debug/main.o
+debug/homepage.o
+debug/openproject.o
+debug/textbutton.o
+debug/qrc_icons.o
+debug/qrc_qmake_qmake_qm_files.o
+debug/moc_homepage.o
+debug/moc_landingpage.o
+debug/moc_textbutton.o
