@@ -1,5 +1,4 @@
 #include "homepage.h"
-#include "landingpage.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -18,11 +17,11 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    LandingPage l;
-    l.show();
 
 
-    //HomePage w;
-    //w.show();
+    HomePage w;
+    w.showMaximized();
+
+
     return a.exec();
 }

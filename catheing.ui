@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Catheing</class>
+ <widget class="QDialog" name="Catheing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>148</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/new/prefix1/loading1.png);</string>
+  </property>
+  <widget class="QWidget" name="cat4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>191</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/prefix1/cat4.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="cat3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>241</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/prefix1/cat3.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="cat2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>151</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/prefix1/cat2.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="cat1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>151</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/prefix1/orangeCat.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="bg" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>161</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/prefix1/loading1.png);</string>
+   </property>
+  </widget>
+  <zorder>bg</zorder>
+  <zorder>cat4</zorder>
+  <zorder>cat3</zorder>
+  <zorder>cat2</zorder>
+  <zorder>cat1</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

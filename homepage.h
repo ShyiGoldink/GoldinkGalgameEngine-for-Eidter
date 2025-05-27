@@ -1,9 +1,10 @@
 #ifndef HOMEPAGE_H
 #define HOMEPAGE_H
 
-//这个类就是主类了，就是工作界面
+//这个类是主界面，也就是用于控制中心
 
 #include <QMainWindow>
+#include <landingpage.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,10 +17,12 @@ class HomePage : public QMainWindow
     Q_OBJECT
 
 public:
+    void setStyleAll(QString whichStyle);//为全部的界面设置风格
     HomePage(QWidget *parent = nullptr);
     ~HomePage();
 
 private:
     Ui::HomePage *ui;
+    LandingPage *lp;
 };
 #endif // HOMEPAGE_H

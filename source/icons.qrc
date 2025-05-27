@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>favicon.ico</file>
+        <file>loading1.png</file>
+        <file>orangeCat.png</file>
+        <file>cat4.png</file>
+        <file>cat3.png</file>
+        <file>cat2.png</file>
+        <file>catVoice.WAV</file>
     </qresource>
 </RCC>

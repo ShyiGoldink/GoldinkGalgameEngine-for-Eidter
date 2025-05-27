@@ -1,11 +1,17 @@
+debug/catheing.o
 debug/jsoncontorller.o
 debug/landingpage.o
 debug/main.o
 debug/homepage.o
+debug/newproject.o
 debug/openproject.o
+debug/opensourceintro.o
 debug/textbutton.o
 debug/qrc_icons.o
 debug/qrc_qmake_qmake_qm_files.o
+debug/moc_catheing.o
 debug/moc_homepage.o
 debug/moc_landingpage.o
+debug/moc_newproject.o
+debug/moc_opensourceintro.o
 debug/moc_textbutton.o

@@ -1,11 +1,17 @@
+release/catheing.o
 release/jsoncontorller.o
 release/landingpage.o
 release/main.o
 release/homepage.o
+release/newproject.o
 release/openproject.o
+release/opensourceintro.o
 release/textbutton.o
 release/qrc_icons.o
 release/qrc_qmake_qmake_qm_files.o
+release/moc_catheing.o
 release/moc_homepage.o
 release/moc_landingpage.o
+release/moc_newproject.o
+release/moc_opensourceintro.o
 release/moc_textbutton.o
