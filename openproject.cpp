@@ -1,3 +1,5 @@
 #include "openproject.h"
 
-OpenProject::OpenProject() {}
+OpenProject::OpenProject(QString openFilePath)
+    : m_rootFilePath(openFilePath)
+{}

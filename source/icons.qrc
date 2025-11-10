@@ -7,5 +7,9 @@
         <file>cat3.png</file>
         <file>cat2.png</file>
         <file>catVoice.WAV</file>
+        <file>translation_zh.qm</file>
+        <file>addtion.png</file>
+        <file>Point.png</file>
+        <file>PointC.png</file>
     </qresource>
 </RCC>

@@ -25,7 +25,8 @@ public:
             LandingPage->setObjectName("LandingPage");
         LandingPage->resize(400, 300);
         LandingPage->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 239, 238);\n"
-"color: rgb(255, 213, 205);"));
+"color: rgb(233, 245, 245);\n"
+""));
 
         retranslateUi(LandingPage);
 

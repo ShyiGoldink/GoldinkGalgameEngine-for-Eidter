@@ -8,7 +8,7 @@
 class OpenProject
 {
 public:
-    OpenProject();
+    OpenProject(QString rootFilePath);
 private:
     QString m_rootFilePath;//储存打开文件的路径
 };

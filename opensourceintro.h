@@ -28,11 +28,14 @@ public:
     explicit OpenSourceIntro(QWidget *parent = nullptr);
     ~OpenSourceIntro();
     void setStyle(QString witchStyle);
+    void uiFresh(bool isEnglish);
 
 private:
     Ui::OpenSourceIntro *ui;
     QLabel *label;
+    QWidget *widget;
     QPushButton *pushButton;
+
 };
 
 #endif // OPENSOURCEINTRO_H

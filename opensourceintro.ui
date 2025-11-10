@@ -20,21 +20,8 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 230, 229);
-color: rgb(70, 79, 255);</string>
+color: rgb(87, 177, 255);</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(49, 63, 255);</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>

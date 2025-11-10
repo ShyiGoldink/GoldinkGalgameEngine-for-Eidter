@@ -1,6 +1,15 @@
 #include "catheing.h"
 #include "ui_catheing.h"
 
+Catheing* Catheing::m_instance = nullptr;
+
+Catheing* Catheing::instance() {
+    if (!m_instance) {
+        m_instance = new Catheing();
+    }
+    return m_instance;
+}
+
 Catheing::Catheing(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Catheing)
@@ -13,7 +22,7 @@ Catheing::Catheing(QWidget *parent)
     setAttribute(Qt::WA_TranslucentBackground);
     setStyleSheet("QDialog { background: transparent; }");
 
-    //将位置移动到左下角
+    //将位置移动到右下角
     QScreen *screen = QGuiApplication::primaryScreen();
     QRect screenGeometry = screen->availableGeometry();
     int screenWidth = screenGeometry.width();
@@ -27,39 +36,42 @@ Catheing::Catheing(QWidget *parent)
     ui->cat4->setVisible(false);
 
     soundEffect->setSource(QUrl::fromLocalFile(":/new/prefix1/catVoice.WAV"));
-
 }
 
 Catheing::~Catheing()
 {
     delete ui;
+    m_instance = nullptr;
 }
 
 void Catheing::start(){
-    ui->bg->setVisible(true);
+    instance()->show();
+    instance()->raise(); // 确保窗口在最前面
+    instance()->activateWindow(); // 激活窗口
+    instance()->ui->bg->setVisible(true);
 }
 
 void Catheing::step1(){
-    ui->cat1->setVisible(true);
+    instance()->ui->cat1->setVisible(true);
 }
 
 void Catheing::step2(){
-    ui->cat2->setVisible(true);
+    instance()->ui->cat2->setVisible(true);
 }
 
 void Catheing::step3(){
-    ui->cat3->setVisible(true);
+    instance()->ui->cat3->setVisible(true);
 }
 
 void Catheing::step4(){
-    ui->cat4->setVisible(true);
+    instance()->ui->cat4->setVisible(true);
 }
 
 void Catheing::finish(){
-    soundEffect->play();
-    connect(soundEffect, &QSoundEffect::playingChanged, this, [this](){
-        if(!soundEffect->isPlaying()) {
-            this->close();
+    instance()->soundEffect->play();
+    connect(instance()->soundEffect, &QSoundEffect::playingChanged, instance(), [](){
+        if(!instance()->soundEffect->isPlaying()) {
+            instance()->close();
         }
     });
 }

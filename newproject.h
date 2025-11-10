@@ -30,6 +30,7 @@ public:
     ~NewProject();
     void loadLanding();
     void setStyle(QString witchStyle);
+    void uiFresh(bool isEnglish);
 
 protected:
     //重写一个事件监听器，用于保证本页面的大小与landingpage的大小有一个相对比例
@@ -38,6 +39,7 @@ protected:
 
 signals:
     void exit();
+    void newFinish(QString filePath);
 
 public slots:
     void browseSlot();//这是用于获取项目位置的信息
@@ -52,6 +54,7 @@ private:
     QLineEdit *projectPath;//输入项目地址的地方
     QPushButton *browse;//浏览目录的地方
     QPushButton *ensure;//确定
+    QPushButton *ensureLive2D;//live2D模式，启动！
     QPushButton *cancel;//取消
     bool m_isDefault;//保存normal
     Catheing *catheing;

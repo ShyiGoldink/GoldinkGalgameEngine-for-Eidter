@@ -39,6 +39,9 @@ constexpr auto qt_meta_stringdata_CLASSLandingPageENDCLASS = QtMocHelpers::strin
     "LandingPage",
     "exExit",
     "",
+    "newFinish",
+    "filePath",
+    "openProjectSiganl",
     "newAnimationSlot",
     "QPropertyAnimation*",
     "animation",
@@ -46,7 +49,8 @@ constexpr auto qt_meta_stringdata_CLASSLandingPageENDCLASS = QtMocHelpers::strin
     "group",
     "QWidget*",
     "widget",
-    "outAnimationSlot"
+    "outAnimationSlot",
+    "openProjectSlot"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -59,26 +63,32 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLandingPageENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   32,    2, 0x06,    1 /* Public */,
+       1,    0,   50,    2, 0x06,    1 /* Public */,
+       3,    1,   51,    2, 0x06,    2 /* Public */,
+       5,    1,   54,    2, 0x06,    4 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    3,   33,    2, 0x08,    2 /* Private */,
-      10,    2,   40,    2, 0x08,    6 /* Private */,
+       6,    3,   57,    2, 0x08,    6 /* Private */,
+      13,    2,   64,    2, 0x08,   10 /* Private */,
+      14,    0,   69,    2, 0x08,   13 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 4, 0x80000000 | 6, 0x80000000 | 8,    5,    7,    9,
-    QMetaType::Void, 0x80000000 | 4, 0x80000000 | 6,    5,    7,
+    QMetaType::Void, 0x80000000 | 7, 0x80000000 | 9, 0x80000000 | 11,    8,   10,   12,
+    QMetaType::Void, 0x80000000 | 7, 0x80000000 | 9,    8,   10,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -94,6 +104,12 @@ Q_CONSTINIT const QMetaObject LandingPage::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<LandingPage, std::true_type>,
         // method 'exExit'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'newFinish'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'openProjectSiganl'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'newAnimationSlot'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QPropertyAnimation *, std::false_type>,
@@ -102,7 +118,9 @@ Q_CONSTINIT const QMetaObject LandingPage::staticMetaObject = { {
         // method 'outAnimationSlot'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QPropertyAnimation *, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QParallelAnimationGroup *, std::false_type>
+        QtPrivate::TypeAndForceComplete<QParallelAnimationGroup *, std::false_type>,
+        // method 'openProjectSlot'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -114,14 +132,17 @@ void LandingPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         (void)_t;
         switch (_id) {
         case 0: _t->exExit(); break;
-        case 1: _t->newAnimationSlot((*reinterpret_cast< std::add_pointer_t<QPropertyAnimation*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QParallelAnimationGroup*>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QWidget*>>(_a[3]))); break;
-        case 2: _t->outAnimationSlot((*reinterpret_cast< std::add_pointer_t<QPropertyAnimation*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QParallelAnimationGroup*>>(_a[2]))); break;
+        case 1: _t->newFinish((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->openProjectSiganl((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 3: _t->newAnimationSlot((*reinterpret_cast< std::add_pointer_t<QPropertyAnimation*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QParallelAnimationGroup*>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QWidget*>>(_a[3]))); break;
+        case 4: _t->outAnimationSlot((*reinterpret_cast< std::add_pointer_t<QPropertyAnimation*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QParallelAnimationGroup*>>(_a[2]))); break;
+        case 5: _t->openProjectSlot(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 1:
+        case 3:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 1:
@@ -132,7 +153,7 @@ void LandingPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
                 *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QWidget* >(); break;
             }
             break;
-        case 2:
+        case 4:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 1:
@@ -148,6 +169,20 @@ void LandingPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
             using _t = void (LandingPage::*)();
             if (_t _q_method = &LandingPage::exExit; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (LandingPage::*)(QString );
+            if (_t _q_method = &LandingPage::newFinish; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (LandingPage::*)(QString );
+            if (_t _q_method = &LandingPage::openProjectSiganl; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 2;
                 return;
             }
         }
@@ -173,13 +208,13 @@ int LandingPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 6;
     }
     return _id;
 }
@@ -188,5 +223,19 @@ int LandingPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void LandingPage::exExit()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void LandingPage::newFinish(QString _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void LandingPage::openProjectSiganl(QString _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 QT_WARNING_POP
